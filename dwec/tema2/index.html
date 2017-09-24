@@ -3,11 +3,48 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>TEMA 2 DESARROLLO WEB EN ENTORNO CLIENTE</title>
-    <script type="text/javascript" src="scripts/generico.js" ></script>
+    <script defer type="text/javascript" src="scripts/generico.js" ></script>
+    <script type="text/javascript" src="scripts/ejercicio2.js" ></script>
 </head>
 <body>
     <p>EN ESTA PAGINA DEBEMOS INCLUIR NUESTRO SCRIPTS Y PROBARLOS</p>
-    <input type="button" onclick="comprobarFunciones(funciones);" value="COMPROBAR EJERCICIOS FUNCIONES DECLARACIONES"></button>
+    <div id="botones">
+        <p>PARA LAS FUNCIONES DE NIVEL 1 DEBÉIS INCLUIR EL ARCHIVO ejercicios1.js y declarar correctamente las variables que necesitamos para que todas las funciones devuelvan TRUE</p>
+        <input id="nivel1" type="button" onclick="comprobarFunciones1(funcionesEjercicio1);" value="COMPROBAR EJERCICIOS FUNCIONES DECLARACIONES"></button>
+        </br>
+        </br>
+        </br>
+        <p>PARA LAS FUNCIONES DE NIVEL 2 DEBÉIS INCLUIR EL ARCHIVO ejercicios2.js y modificar correctamente los valores de X e Y de cada funcion,
+            e incluir una línea con el operando solicitado en el nombre de la función para que devuelva TRUE </p>
 
+        <input id="nivel2" type="button" onclick="comprobarFunciones2(funcionesEjercicio2);" value="COMPROBAR EJERCICIOS FUNCIONES CON OPERANDOS"></button>
+
+
+        </br>
+        </br>
+        </br>
+        <p>PARA LAS FUNCIONES DE NIVEL 3 DEBÉIS INCLUIR EL ARCHIVO ejercicios3.js y modificar correctamente las variables declaradas,
+            e incluir una línea de código correspondiente para que el resultado final sea TRUE </p>
+
+        <input id="nivel3" type="button" onclick="comprobarFunciones3(funcionesEjercicio3);" value="COMPROBAR EJERCICICIOS CON OPERANDOS 2"></button>
+
+
+        </br>
+        </br>
+        </br>
+        <p>PARA LAS FUNCIONES DE NIVEL 4 DEBES IMPLEMENTAR CADA UNA DE LAS FUNCIONES CON LAS ESTRUCTURAS DE CONTROL NECESARIAS</p>
+
+        <input id="nivel4" type="button" onclick="comprobarFunciones4(funcionesEjercicio4);" value="COMPROBAR EJERCICICIOS ESTRUCTURAS DE CONTROL"></button>
+
+
+        </br>
+        </br>
+        </br>
+        <p>ESTE CASO SON LAS MISMAS FUNCIONES DEL NIVEL 4 pero con pruebas un poco mas avanzadas</p>
+
+        <input id="nivel5" type="button" onclick="comprobarFunciones4(funcionesEjercicio4,true);" value="COMPROBAR EJERCICICIOS ESTRUCTURAS DE CONTROL AVANZADO"></button>
+
+
+    </div>
 </body>
 </html>

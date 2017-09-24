@@ -20,7 +20,6 @@ function corregirDeclaraciones(){
 }
 
 function declararNumeros(){
-
     return typeof numA === "number"
        && typeof numB === "number"
        && numA > numB;
@@ -71,6 +70,7 @@ function declararObjeto(){
 
 function declararArray(){
 
+
     return lista instanceof Array
             && lista.length === 5
             && lista[4] === "Correcto";
@@ -80,6 +80,7 @@ function declararArray(){
 
 function declararArrayTipo(){
 
+
     return listaEnteros instanceof Int32Array
             && listaEnteros.length === 10;
 
@@ -87,6 +88,7 @@ function declararArrayTipo(){
 
 
 function declararVariableGlobal(){
+
 
     return window.x
             && x === "SOY gLOBAL"
@@ -97,6 +99,8 @@ function declararVariableGlobal(){
 function declararPrototipo(){
 
     var objeto = new prototipo("ejemplo");
+
+
     return objeto.__proto__ === prototipo.prototype
 
 }
@@ -109,23 +113,3 @@ function declaracionConRetraso(){
 
     return resultado;
 }
-
-
-
-var funciones =
-    [
-        //corregirDeclaraciones,
-        declararNumeros,
-        declararString,
-        noDefinido,
-        declararSymbol,
-        declararFecha,
-        declararExpresionRegular,
-        declararFuncion,
-        declararObjeto,
-        declararArray,
-        declararArrayTipo,
-        declararVariableGlobal,
-        declararPrototipo,
-        declaracionConRetraso
-    ];
